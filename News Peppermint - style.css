@@ -1,20 +1,20 @@
 @charset "utf-8";
-/* Common */
 body {margin:0; padding:0; font-size:8px; line-height:1.6; font-family:'Malgun Gothic', '맑은 고딕', 나눔고딕, NanumGothic, "Source Sans Pro","Open Sans","Helvetica Neue",sans-serif, Tahoma; background:url("images/pattern-24.gif") repeat left top}
 * {word-wrap:break-word; overflow-wrap:break-word}
+data {display:none}
 
 /* wrapContainer */
 #container {max-width:1100px; margin:34px auto 0; background:#fff; border:1em rgb(100,100,100) solid; border-right-width:0; border-left-width:0}
 #header {}
-#wrapContent {font-size:1.6em; position:relative; min-height:120em}
+#wrapContent {font-size:1.6em; position:relative}
 #content {}
 #sidebar {background-color:#f8f8f8; padding:0.5em; margin:0.5em 0}
 
 /* ***** Header ***** */
-#header .blogTitle {font-family:'Times New Roman'; font-size:4em; font-weight:bold; text-align:center; padding:.3em 0 0; border-top:0.5em solid rgb(182, 182, 223); background-color: #66ccce}
+#header .blogTitle {font-family:'Times New Roman'; font-size:4em; font-weight:bold; text-align:center; padding:.3em 0 0; border-top:0.5em solid rgb(182, 182, 223); background-color:rgb(125,200,204)}
 #header a {color:white}
 
-#header .blogMenu {background:#678CA0; margin:0.25em 0; padding:0.7em 0; text-align:center; font-size:2em; border-bottom:0.7em solid rgb(122,122,122); border-radius:1em}
+#header .blogMenu {background:#678CA0; margin:0.25em 0; padding:0.7em 0; text-align:center; font-size:2em; border-bottom:0.7em solid rgb(122,122,122)}
 #header .blogMenu .middleWrapBlogMenu {}
 #header .blogMenu ul {list-style:none; margin:0; padding:0}
 #header .blogMenu li {}
@@ -164,10 +164,10 @@ table {}
 .article dd {margin-left:20px; padding-bottom:10px}
 .article blockquote {background:url(images/icon_quotation.gif) top left no-repeat; padding-left:25px; margin:10px 20px}
 
-.author {text-align:right; padding:2em 0}
+.author {text-align:right; padding:.5em 0}
 .author .text {font:0.85em Verdana, Arial, Helvetica, sans-serif; color:#999}
 
-.tagTrail {color:#999; padding:0 0 0 2.5em; background:url(images/icon_tag.gif) left center no-repeat; clear:both; border-bottom:0.1em solid #d1d3d4; margin-bottom:1em}
+.tagTrail {color:#999; padding:0 0 0 2.5em; background:url(images/icon_tag.gif) left 0.5em no-repeat; clear:both; border-bottom:0.1em solid #d1d3d4; margin-bottom:1em}
 .tagTrail a {color:#999}
 .tagText {display:none}
 
@@ -278,7 +278,7 @@ table {}
 #archive li {}
 #calendar td {font-family:verdana}
 
-#counter {font:0.85em Verdana, Helvetica, Arial, Gulim, sans-serif; padding:10px 15px; margin-top:20px; border:1px solid #dedede; background-color:#eee; color:#999; line-height:1.5}
+#counter {font:0.85em Verdana, Helvetica, Arial, Gulim, sans-serif; padding:10px 15px; margin:2em; border:1px solid #dedede; background-color:#eee; color:#999; line-height:1.5}
 #counter dl, #counter dt, #counter dd {padding:0; margin:0}
 #counter dt {float:left; width:80px}
 #counter dd.total {font-weight:bold; color:#333}
@@ -298,11 +298,14 @@ table {}
 @media all and (min-width:401px) {
 	body {font-size:10px}
 }
-@media all and (min-width:500px) {
-	#header .blogTitle {font-size:5em; border-radius:.3em}
+@media all and (min-width:501px) {
+	#header .blogTitle {font-size:5em}
 }
 @media all and (min-width:801px) {
-	#container {padding:0.5em; border-right-width:0.5em; border-left-width:0.5em; border-radius:3em}
+	#container {padding:0.5em; border-right-width:0.5em; border-left-width:0.5em; border-radius:2.5em}
+	#header .blogTitle {border-radius:.3em}
+	#header .blogMenu {border-radius:.5em}
+	#wrapContent {min-height:150em}
 	#content {margin-right:21.5em}
-	#sidebar {position:absolute; margin:0; top:0; right:0; bottom:0; width:20em}
+	#sidebar {position:absolute; margin:0; top:0; right:0; bottom:0; width:20em; border-radius:.5em}
 }
