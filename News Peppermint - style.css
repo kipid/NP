@@ -102,8 +102,8 @@ table {}
 #localog .info {padding-left:0.5em; margin-bottom:0.3em}
 #localog a {color:#617f8a; text-decoration:none}
 
-#taglog ul {text-align:justify}
-#taglog li {display:inline-block; padding:0.5em; background:url(images/bullet_dot.gif) 0 .59em no-repeat}
+#taglog ul {text-align:justify; padding:.5em}
+#taglog li {display:inline-block; padding:.2em .5em; background:url(images/bullet_dot.gif) 0 .85em no-repeat}
 #taglog li .cloud1 {color:#699; font-weight:bold}
 #taglog li .cloud2 {color:#84bbdd; font-weight:bold}
 #taglog li .cloud3 {color:#333}
